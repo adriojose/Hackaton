@@ -1,123 +1,136 @@
-/* Reset básico */
-* {
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 body {
-    background-color: #2c2c2c;
+    line-height: 1;
 }
-
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 .container {
+    width: 100%;
+    height: 100vh;
+    background-color: #3D3D3D;
+}
+.alto {
+    width: 100%;
+    height: 20vh;
+    background-color: #3D3D3D;
+    border-bottom: solid black 1px;
+}
+.esquerda {
+    width: 20%;
+    height: 100vh;
+    background-color: #3D3D3D;
+    border-right: solid 1px black;
+}
+.up {
+    width: 100%;
+    height: 20vh;
+    background-color: #3D3D3D;
+    border-bottom: solid black 1px;
+}
+nav {
     display: flex;
-    min-height: 100vh;
-    align-items: stretch; /* isso faz o aside acompanhar o main */
-}
-
-.sidebar nav {
-    margin-top: 5vw;
-}
-.sidebar a {
+    flex-direction: column;
+    align-items: center;
     margin-top: 3vw;
 }
-/* Sidebar */
-.sidebar {
-    width: 220px;
-    background-color: #2c2c2c;
-    color: #fff;
-    padding: 20px;
-}
-
-.sidebar .logo {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.sidebar nav a {
-    display: block;
-    color: #ccc;
+nav a {
+    padding: 12px;
+    font-size: 1.5vw;
     text-decoration: none;
-    margin-bottom: 15px;
-    font-size: 16px;
-    transition: 0.3s;
 }
-
-.sidebar nav a:hover,
-.sidebar nav a.active {
-    color: #1e90ff;
+.meio {
+    display: flex;
+    justify-content: center;
 }
-.borda {
-    border-bottom: 1px solid;
-    width: 100vw;
-    margin-right: 7vw;
-    margin-left: -1.5vw;
-}
-
-/* Main content */
-.main-content {
-    flex: 1;
-    padding: 30px;
-    margin-top: 6vw;
-}
-
-/* Profile card */
-
-
-.banner {
-    height: 11vw;
-    background: linear-gradient(to right, #1e90ff, #3399ff);
-    width: 78vw;
+.editafoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    width: 70%;
+    height: 22vh;
+    margin-top: 1vw;
     border-radius: 3px;
+    margin-left: 19vw;
 }
-
-.profile-info {
-    padding: 20px;
-    text-align: center;
-    color: #F5F5F5;
-    margin-left: 5vw;
-}
-
-.profile-info h2{
-    font-size: 2vw;
-    color: #F5F5F5;
-    padding: 1.2vw;
-     margin-left: 5.1vw;
-}
-.profile-info p {
-    padding: 1.1vw;
-    font-size: 1.6vw;
-    margin-left: 4vw;
-}
-
-aside {
-    border-right: 1.9px solid #F5F5F5;
-    height: auto;         /* deixa a altura crescer automaticamente */
-    align-self: stretch;  /* força o aside a esticar junto com o main */
+button img {
+    width: 8vw;
+    height: 8vw;
+    padding: 10px 7px 9px 10px;
 }
 
 .banner button {
-    background-color: #2c2c2c;
-    margin-left: 35vw;
-    margin-top: 5vw;
-    padding: 3vw;
-    width: 180px;
-    height: 185px;
+    margin-top: 19vw;
+    background-color: #3D3D3D;
+    align-items: center;
+    margin-left: 8vw;
 }
-.banner button img {
-    width: 4vw;
-    height: 4vw;
+.informacoes p{
+    padding-top: 1vw;
+    font-size: 1.7vw;
 }
-.profile-info h2 img {
-    width: 4vw;
-    padding-left: 1.5vw;
+.banner .informacoes {
+    padding-top: 2vw;
 }
-.profile-info p img {
-     width: 4vw;
-    padding-left: 1.5vw;
+
+.informacoes h1 {
+    display: flex;          /* coloca texto + img na mesma linha */
+    align-items: center;  
+    gap: 1.4vw;
+    padding: 0 0 0 2.3vw;         
+    justify-content: center;
+    font-size: 2vw;
 }
-.aviso {
-    color: #F5F5F5;
+.informacoes p {
+     display: flex;          /* coloca texto + img na mesma linha */
+    align-items: center;  
+    gap: 1.4vw;         
+    justify-content: center;
+}
+h1 img {
+    width: 2.6vw;
+    height: 2.4vw;
 }
