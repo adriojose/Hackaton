@@ -117,7 +117,7 @@ button img {
 }
 
 .informacoes h1 {
-    display: flex;          /* coloca texto + img na mesma linha */
+    display: flex;          
     align-items: center;  
     gap: 1.4vw;
     padding: 0 0 0 2.3vw;         
@@ -125,7 +125,7 @@ button img {
     font-size: 2vw;
 }
 .informacoes p {
-     display: flex;          /* coloca texto + img na mesma linha */
+     display: flex;          
     align-items: center;  
     gap: 1.4vw;         
     justify-content: center;
