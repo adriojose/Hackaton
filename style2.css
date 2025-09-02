@@ -80,6 +80,7 @@ nav a {
     padding: 12px;
     font-size: 1.5vw;
     text-decoration: none;
+    color: white;
 }
 .meio {
     display: flex;
@@ -89,48 +90,64 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: #66B2FF;
     width: 70%;
     height: 22vh;
     margin-top: 1vw;
     border-radius: 3px;
-    margin-left: 19vw;
+    margin-left: 20vw;
+    position: relative;
 }
 button img {
-    width: 8vw;
-    height: 8vw;
-    padding: 10px 7px 9px 10px;
+    width: 4.5vw;
+    height: 5vw;
+    padding: 40px 40px 40px 40px;
 }
 
 .banner button {
-    margin-top: 19vw;
+    margin-top: 21vw;
     background-color: #3D3D3D;
     align-items: center;
-    margin-left: 8vw;
+    margin-left:10vw;
 }
 .informacoes p{
     padding-top: 1vw;
-    font-size: 1.7vw;
+    font-size: 1.2vw;
+    color: white;
 }
 .banner .informacoes {
     padding-top: 2vw;
 }
-
 .informacoes h1 {
     display: flex;          
     align-items: center;  
     gap: 1.4vw;
     padding: 0 0 0 2.3vw;         
     justify-content: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    color: white;
+    margin-left: 1vw;
 }
 .informacoes p {
      display: flex;          
     align-items: center;  
     gap: 1.4vw;         
     justify-content: center;
+    margin-left: 3vw;
 }
 h1 img {
     width: 2.6vw;
     height: 2.4vw;
 }
+p img {
+    width: 2.6vw;
+    height: 2.4vw;
+}
+.email {
+    position: absolute;
+    top: vw; 
+    left: 2vw;
+    font-size: 0.9vw;
+    color: white;
+}
+
